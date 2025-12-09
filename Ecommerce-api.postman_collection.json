@@ -1,0 +1,1023 @@
+{
+	"info": {
+		"_postman_id": "a1b8ebe7-f5d6-4a29-8e1e-844322340124",
+		"name": "Ecommerce-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6981980"
+	},
+	"item": [
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "All Products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/products",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/products",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"products"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"141f-Ex5kxVuog4NZS3QS7UdwHS/kf/o\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 09 Dec 2025 17:21:18 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"message\": \"\",\n    \"data\": [\n        {\n            \"_id\": \"6938587fc33115c2a6dacf14\",\n            \"title\": \"Lining Maroon Shirt\",\n            \"description\": \"Update your everyday shirt collection with this cool and comfy regular fit full sleeve shirt from snitch. The regular fit lends you an easygoing look and with our breathable shirts in 100% cotton, comfort is no longer reserved for the weekends.\",\n            \"images\": [\n                {\n                    \"order\": 0,\n                    \"url\": \"https://schbang-ecommerce.s3.ap-south-1.amazonaws.com/product/9b12b3dc-5812-476c-97fa-7c167a17798e-1765300351375.jpg\"\n                },\n                {\n                    \"order\": 1,\n                    \"url\": \"https://schbang-ecommerce.s3.ap-south-1.amazonaws.com/product/a4b4b515-fb30-4e2d-aadb-cd18d63b3fb5-1765300351379.jpg\"\n                },\n                {\n                    \"order\": 2,\n                    \"url\": \"https://schbang-ecommerce.s3.ap-south-1.amazonaws.com/product/b0a2c398-499e-479e-ac92-33314ae242ae-1765300351379.jpg\"\n                }\n            ],\n            \"category\": {\n                \"_id\": \"693856c12cf78fb4241ab6bc\",\n                \"title\": \"Mens Fashion\",\n                \"createdAt\": \"2025-12-09T17:05:05.265Z\",\n                \"updatedAt\": \"2025-12-09T17:05:05.265Z\",\n                \"__v\": 0\n            },\n            \"price\": 999,\n            \"createdAt\": \"2025-12-09T17:12:31.616Z\",\n            \"updatedAt\": \"2025-12-09T17:12:31.616Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6938592cc33115c2a6dacf40\",\n            \"title\": \"Double Pocket Denim Jacket\",\n            \"description\": \"Classic black denim jacket with a regular fit, featuring a buttoned closure and functional flap pockets. Crafted from 100% cotton, it offers durability and comfort. Perfect for layering, this versatile piece adds a timeless edge to casual and streetwear looks.\",\n            \"images\": [\n                {\n                    \"order\": 0,\n                    \"url\": \"https://schbang-ecommerce.s3.ap-south-1.amazonaws.com/product/8f7adfd5-eec9-4903-9b34-b7936ff58729-1765300523692.jpg\"\n                },\n                {\n                    \"order\": 1,\n                    \"url\": \"https://schbang-ecommerce.s3.ap-south-1.amazonaws.com/product/321fab82-7f64-46be-98a3-7285443175e9-1765300523693.jpg\"\n                },\n                {\n                    \"order\": 2,\n                    \"url\": \"https://schbang-ecommerce.s3.ap-south-1.amazonaws.com/product/3166ecb4-0876-42a0-9e46-459f2771a115-1765300523693.jpg\"\n                }\n            ],\n            \"category\": {\n                \"_id\": \"693856c12cf78fb4241ab6bc\",\n                \"title\": \"Mens Fashion\",\n                \"createdAt\": \"2025-12-09T17:05:05.265Z\",\n                \"updatedAt\": \"2025-12-09T17:05:05.265Z\",\n                \"__v\": 0\n            },\n            \"price\": 1999,\n            \"createdAt\": \"2025-12-09T17:15:24.015Z\",\n            \"updatedAt\": \"2025-12-09T17:15:24.015Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6938596fc33115c2a6dacf55\",\n            \"title\": \"Stretch Bootcut Jeans\",\n            \"description\": \"Classic blue denim jeans crafted from 98% Cotton and 2% Elastane for a perfect blend of comfort and stretch. Featuring a bootcut fit and smooth texture, these jeans are ideal for versatile styling.\",\n            \"images\": [\n                {\n                    \"order\": 0,\n                    \"url\": \"https://schbang-ecommerce.s3.ap-south-1.amazonaws.com/product/5da97f92-d9a3-462b-9c08-bdf27c40d9ea-1765300591291.jpg\"\n                },\n                {\n                    \"order\": 1,\n                    \"url\": \"https://schbang-ecommerce.s3.ap-south-1.amazonaws.com/product/0cac2854-272e-4740-8749-1ca34b989fdc-1765300591292.jpg\"\n                },\n                {\n                    \"order\": 2,\n                    \"url\": \"https://schbang-ecommerce.s3.ap-south-1.amazonaws.com/product/adb7f325-fa43-4cd0-aa8b-840105974a78-1765300591292.jpg\"\n                }\n            ],\n            \"category\": {\n                \"_id\": \"693856c12cf78fb4241ab6bc\",\n                \"title\": \"Mens Fashion\",\n                \"createdAt\": \"2025-12-09T17:05:05.265Z\",\n                \"updatedAt\": \"2025-12-09T17:05:05.265Z\",\n                \"__v\": 0\n            },\n            \"price\": 1799,\n            \"createdAt\": \"2025-12-09T17:16:31.557Z\",\n            \"updatedAt\": \"2025-12-09T17:16:31.557Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"693859bec33115c2a6dacf6c\",\n            \"title\": \"Sleek Striped Black Polo T-Shirt\",\n            \"description\": \"Check out this casual T-shirt from snitch. Fashionable and appealing, this slim fit T-shirt comes in a shade of black. This versatile piece can be worn and styled for almost any occasion. It features a classic polo and half sleeve.\",\n            \"images\": [\n                {\n                    \"order\": 0,\n                    \"url\": \"https://schbang-ecommerce.s3.ap-south-1.amazonaws.com/product/01b0cd83-c921-48bc-b497-485d099ccd8b-1765300670467.jpg\"\n                },\n                {\n                    \"order\": 1,\n                    \"url\": \"https://schbang-ecommerce.s3.ap-south-1.amazonaws.com/product/fad44c72-94f4-4b93-93e0-6ffe9b9cda0c-1765300670468.jpg\"\n                },\n                {\n                    \"order\": 2,\n                    \"url\": \"https://schbang-ecommerce.s3.ap-south-1.amazonaws.com/product/5e338a50-4253-40af-bb87-a31d0aecc9d0-1765300670468.jpg\"\n                }\n            ],\n            \"category\": {\n                \"_id\": \"693856c12cf78fb4241ab6bc\",\n                \"title\": \"Mens Fashion\",\n                \"createdAt\": \"2025-12-09T17:05:05.265Z\",\n                \"updatedAt\": \"2025-12-09T17:05:05.265Z\",\n                \"__v\": 0\n            },\n            \"price\": 1129,\n            \"createdAt\": \"2025-12-09T17:17:50.627Z\",\n            \"updatedAt\": \"2025-12-09T17:17:50.627Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"69385a23c33115c2a6dacf8a\",\n            \"title\": \"Oversized Graphic Hoodie\",\n            \"description\": \"Retro-cool graphic of a vintage cassette player pops against the deep teal fabric of this oversized-fit hoodie. Crafted from a soft cotton-polyester blend for all-day comfort, it features a classic kangaroo pocket, an adjustable drawstring hood, and snug ribbed trims. An ideal statement piece for effortless streetwear style that merges nostalgia with a modern edge.\",\n            \"images\": [\n                {\n                    \"order\": 0,\n                    \"url\": \"https://schbang-ecommerce.s3.ap-south-1.amazonaws.com/product/3aafc833-7795-4370-a0b1-131ad82457d2-1765300771188.jpg\"\n                },\n                {\n                    \"order\": 1,\n                    \"url\": \"https://schbang-ecommerce.s3.ap-south-1.amazonaws.com/product/2d79dcbf-dd75-4de7-bc39-48b9ef4b3295-1765300771189.jpg\"\n                },\n                {\n                    \"order\": 2,\n                    \"url\": \"https://schbang-ecommerce.s3.ap-south-1.amazonaws.com/product/3a043b85-ec69-4208-99d1-be8e98a30258-1765300771190.jpg\"\n                }\n            ],\n            \"category\": {\n                \"_id\": \"693856c12cf78fb4241ab6bc\",\n                \"title\": \"Mens Fashion\",\n                \"createdAt\": \"2025-12-09T17:05:05.265Z\",\n                \"updatedAt\": \"2025-12-09T17:05:05.265Z\",\n                \"__v\": 0\n            },\n            \"price\": 1999,\n            \"createdAt\": \"2025-12-09T17:19:31.406Z\",\n            \"updatedAt\": \"2025-12-09T17:19:31.406Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Single Product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/products/:id",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"products",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "6938587fc33115c2a6dacf14"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/products/:id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"products",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "6938587fc33115c2a6dacf14"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"40b-fSu1Zh8JytqsPQXv55oobnn0Hq8\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 09 Dec 2025 17:20:14 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"message\": \"\",\n    \"data\": {\n        \"_id\": \"6938587fc33115c2a6dacf14\",\n        \"title\": \"Lining Maroon Shirt\",\n        \"description\": \"Update your everyday shirt collection with this cool and comfy regular fit full sleeve shirt from snitch. The regular fit lends you an easygoing look and with our breathable shirts in 100% cotton, comfort is no longer reserved for the weekends.\",\n        \"images\": [\n            {\n                \"order\": 0,\n                \"url\": \"https://schbang-ecommerce.s3.ap-south-1.amazonaws.com/product/9b12b3dc-5812-476c-97fa-7c167a17798e-1765300351375.jpg\"\n            },\n            {\n                \"order\": 1,\n                \"url\": \"https://schbang-ecommerce.s3.ap-south-1.amazonaws.com/product/a4b4b515-fb30-4e2d-aadb-cd18d63b3fb5-1765300351379.jpg\"\n            },\n            {\n                \"order\": 2,\n                \"url\": \"https://schbang-ecommerce.s3.ap-south-1.amazonaws.com/product/b0a2c398-499e-479e-ac92-33314ae242ae-1765300351379.jpg\"\n            }\n        ],\n        \"category\": {\n            \"_id\": \"693856c12cf78fb4241ab6bc\",\n            \"title\": \"Mens Fashion\",\n            \"createdAt\": \"2025-12-09T17:05:05.265Z\",\n            \"updatedAt\": \"2025-12-09T17:05:05.265Z\",\n            \"__v\": 0\n        },\n        \"price\": 999,\n        \"createdAt\": \"2025-12-09T17:12:31.616Z\",\n        \"updatedAt\": \"2025-12-09T17:12:31.616Z\",\n        \"__v\": 0\n    }\n}"
+						},
+						{
+							"name": "Error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/products/:id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"products",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "6938587fc33115c2a6dac222"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "36"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"24-e6q5W2WItzjVDpSEz7+plLiKkWo\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 09 Dec 2025 17:20:56 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 404,\n    \"message\": \"Not Found\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "Products",
+					"item": [
+						{
+							"name": "Create Product",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/admin/products",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"products"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "title",
+													"value": "Lining Maroon Shirt",
+													"type": "text"
+												},
+												{
+													"key": "description",
+													"value": "Update your everyday shirt collection with this cool and comfy regular fit full sleeve shirt from snitch. The regular fit lends you an easygoing look and with our breathable shirts in 100% cotton, comfort is no longer reserved for the weekends.",
+													"type": "text"
+												},
+												{
+													"key": "category",
+													"value": "693856c12cf78fb4241ab6bc",
+													"type": "text"
+												},
+												{
+													"key": "price",
+													"value": "999",
+													"type": "text"
+												},
+												{
+													"key": "images",
+													"type": "file",
+													"src": [
+														"/C:/Users/User/Desktop/product-images/Snitch_Feb3rd_22_3970.jpg",
+														"/C:/Users/User/Desktop/product-images/Snitch_Feb3rd_22_3994.jpg",
+														"/C:/Users/User/Desktop/product-images/Snitch_Feb3rd_22_4023.jpg"
+													]
+												}
+											],
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_url}}/admin/products",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"admin",
+												"products"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "66"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"42-B43rBOHQ5PciAaYgJaQljbCP70w\""
+										},
+										{
+											"key": "Vary",
+											"value": "Accept-Encoding"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 09 Dec 2025 17:12:31 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": 200,\n    \"message\": \"Product Created Successfullly\",\n    \"data\": {}\n}"
+								},
+								{
+									"name": "Error",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "title",
+													"value": "Oversized Graphic Hoodie",
+													"type": "text",
+													"disabled": true
+												},
+												{
+													"key": "description",
+													"value": "Retro-cool graphic of a vintage cassette player pops against the deep teal fabric of this oversized-fit hoodie. Crafted from a soft cotton-polyester blend for all-day comfort, it features a classic kangaroo pocket, an adjustable drawstring hood, and snug ribbed trims. An ideal statement piece for effortless streetwear style that merges nostalgia with a modern edge.",
+													"type": "text"
+												},
+												{
+													"key": "category",
+													"value": "693856c12cf78fb4241ab6bc",
+													"type": "text"
+												},
+												{
+													"key": "price",
+													"value": "1999",
+													"type": "text"
+												},
+												{
+													"key": "images",
+													"type": "file",
+													"src": [
+														"/C:/Users/User/Desktop/product-images/4mswh9916-01_1.jpg",
+														"/C:/Users/User/Desktop/product-images/4mswh9916-01_2.jpg",
+														"/C:/Users/User/Desktop/product-images/4mswh9916-01_3.jpg"
+													]
+												}
+											],
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_url}}/admin/products",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"admin",
+												"products"
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "44"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"2c-LfWRl7TyTXPIEA1FMtqtiXwvjtk\""
+										},
+										{
+											"key": "Vary",
+											"value": "Accept-Encoding"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 09 Dec 2025 17:21:47 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": 400,\n    \"message\": \"Title is required\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Product Category",
+					"item": [
+						{
+							"name": "Create Category",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\":\"Category 1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/admin/products/categories",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"products",
+										"categories"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"title\":\"Mens Fashion\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_url}}/admin/products/categories",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"admin",
+												"products",
+												"categories"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "208"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"d0-vGtgPV8rVaiCXxqgx860cw5Tjgk\""
+										},
+										{
+											"key": "Vary",
+											"value": "Accept-Encoding"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 09 Dec 2025 17:05:05 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": 200,\n    \"message\": \"Category Created Successfullly\",\n    \"data\": {\n        \"title\": \"Mens Fashion\",\n        \"_id\": \"693856c12cf78fb4241ab6bc\",\n        \"createdAt\": \"2025-12-09T17:05:05.265Z\",\n        \"updatedAt\": \"2025-12-09T17:05:05.265Z\",\n        \"__v\": 0\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "All categories",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{base_url}}/admin/products/categories",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"admin",
+												"products",
+												"categories"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "180"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"b4-Y8sZvU/dHwCTb0d2ECHYwZaOHuw\""
+										},
+										{
+											"key": "Vary",
+											"value": "Accept-Encoding"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 09 Dec 2025 17:22:15 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": 200,\n    \"message\": \"\",\n    \"data\": [\n        {\n            \"_id\": \"693856c12cf78fb4241ab6bc\",\n            \"title\": \"Mens Fashion\",\n            \"createdAt\": \"2025-12-09T17:05:05.265Z\",\n            \"updatedAt\": \"2025-12-09T17:05:05.265Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Orders",
+			"item": [
+				{
+					"name": "Checkout",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"items\": [\r\n        {\r\n            \"productId\": \"6938587fc33115c2a6dacf14\",\r\n            \"quantity\": 1\r\n        },\r\n        {\r\n            \"productId\": \"6938592cc33115c2a6dacf40\",\r\n            \"quantity\": 2\r\n        }\r\n      \r\n\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/orders/checkout",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"orders",
+								"checkout"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"items\": [\r\n        {\r\n            \"productId\": \"6938587fc33115c2a6dacf14\",\r\n            \"quantity\": 1\r\n        },\r\n        {\r\n            \"productId\": \"6938592cc33115c2a6dacf40\",\r\n            \"quantity\": 2\r\n        }\r\n      \r\n\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/orders/checkout",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"orders",
+										"checkout"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "601"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"259-J400pyUAA3xBET2JuqT87DAHlMQ\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 09 Dec 2025 17:23:00 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"message\": \"Order Placed!\",\n    \"data\": {\n        \"userId\": \"69384524baa7307b81716c30\",\n        \"orderNumber\": \"ORD-20251209-F428C1F6\",\n        \"items\": [\n            {\n                \"productId\": \"6938587fc33115c2a6dacf14\",\n                \"productTitle\": \"Lining Maroon Shirt\",\n                \"quantity\": 1,\n                \"price\": 999,\n                \"subTotal\": 999,\n                \"_id\": \"69385af4c33115c2a6dacfd2\"\n            },\n            {\n                \"productId\": \"6938592cc33115c2a6dacf40\",\n                \"productTitle\": \"Double Pocket Denim Jacket\",\n                \"quantity\": 2,\n                \"price\": 1999,\n                \"subTotal\": 3998,\n                \"_id\": \"69385af4c33115c2a6dacfd3\"\n            }\n        ],\n        \"totalAmount\": 4997,\n        \"status\": \"pending\",\n        \"_id\": \"69385af4c33115c2a6dacfd1\",\n        \"createdAt\": \"2025-12-09T17:23:00.137Z\",\n        \"updatedAt\": \"2025-12-09T17:23:00.137Z\",\n        \"__v\": 0\n    }\n}"
+						},
+						{
+							"name": "Error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"items\": [\r\n        \r\n      \r\n\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/orders/checkout",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"orders",
+										"checkout"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "62"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3e-GYYwHdlITlvp8IoIY2UiaZsAW0A\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 09 Dec 2025 17:23:31 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 400,\n    \"message\": \"items must contain at least 1 items\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "My Account",
+			"item": [
+				{
+					"name": "Profile",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/account/profile",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"account",
+								"profile"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/account/profile",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"account",
+										"profile"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "126"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"7e-mFH+uOeU26cU6eKlF62EFvrXFQQ\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 09 Dec 2025 17:24:01 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"message\": \"\",\n    \"data\": {\n        \"_id\": \"69384524baa7307b81716c30\",\n        \"name\": \"Khalid Ansari\",\n        \"email\": \"ansarizaid201@gmail.com\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "My orders",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/account/orders",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"account",
+										"orders"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "590"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"24e-s7kuw9aAAzrecg6E0g7B3/WrwOA\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 09 Dec 2025 17:24:21 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"message\": \"\",\n    \"data\": [\n        {\n            \"_id\": \"69385af4c33115c2a6dacfd1\",\n            \"userId\": \"69384524baa7307b81716c30\",\n            \"orderNumber\": \"ORD-20251209-F428C1F6\",\n            \"items\": [\n                {\n                    \"productId\": \"6938587fc33115c2a6dacf14\",\n                    \"productTitle\": \"Lining Maroon Shirt\",\n                    \"quantity\": 1,\n                    \"price\": 999,\n                    \"subTotal\": 999,\n                    \"_id\": \"69385af4c33115c2a6dacfd2\"\n                },\n                {\n                    \"productId\": \"6938592cc33115c2a6dacf40\",\n                    \"productTitle\": \"Double Pocket Denim Jacket\",\n                    \"quantity\": 2,\n                    \"price\": 1999,\n                    \"subTotal\": 3998,\n                    \"_id\": \"69385af4c33115c2a6dacfd3\"\n                }\n            ],\n            \"totalAmount\": 4997,\n            \"status\": \"pending\",\n            \"createdAt\": \"2025-12-09T17:23:00.137Z\",\n            \"updatedAt\": \"2025-12-09T17:23:00.137Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5Mzg0NTI0YmFhNzMwN2I4MTcxNmMzMCIsImlhdCI6MTc2NTMwMDQ2OSwiZXhwIjoxNzY1MzAxMDY5fQ.snfBP8TsgrpNJs1Nq5bhCa71j4CkL4RZ_Rn2ZeFNpbo",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": ""
+		}
+	]
+}
