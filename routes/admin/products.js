@@ -22,7 +22,7 @@ const ALLOWED_TYPES = {
   "image/avif": "avif",
 };
 
-const MAX_FILE_LIMIT = 2;
+const MAX_FILE_LIMIT = 5;
 
 const MULTER_ERROR_MESSAGES = {
   LIMIT_FILE_SIZE: "File too large. Maximum limit is 1MB.",
@@ -111,7 +111,7 @@ router.post(
 
           const data = await Model.create(dataToCreate);
 
-          res.send(sendResponse(data, `${moduleName} Created Successfullly`));
+          res.send(sendResponse({}, `${moduleName} Created Successfullly`));
         } catch (error) {
           res.status(500).send(sendError("Internal Server Error", 500));
         }

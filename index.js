@@ -50,7 +50,7 @@ app.use("/auth", require("./routes/auth"));
 
 // =============================FRONTEND ROUTES======================================
 
-app.use("/products", auth, require("./routes/products"));
+app.use("/products", require("./routes/products"));
 
 app.use("/orders", auth, require("./routes/orders"));
 app.use("/account", auth, require("./routes/account"));
