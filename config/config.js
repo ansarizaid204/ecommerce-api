@@ -55,7 +55,7 @@ module.exports = {
     refreshTokenSecret: process.env.REFRESH_TOKEN_SECRET,
     accessTokenExpiresIn: process.env.ACCESS_TOKEN_EXPIRES_IN || '15m',
     refreshTokenExpiresIn: process.env.REFRESH_TOKEN_EXPIRES_IN || '30d',
-    cookieDomain: process.env.COOKIE_DOMAIN,
+    cookieDomain: process.env.COOKIE_DOMAIN || undefined,
     cookieSecure: process.env.COOKIE_SECURE,
 
     googleClientId:process.env.GOOGLE_CLIENT_ID,

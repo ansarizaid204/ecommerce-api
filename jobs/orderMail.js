@@ -6,14 +6,14 @@ module.exports = async (job) => {
 
   if (config.mail.mailer == "on") {
     const mail = await sendmail({
-      to: "ansarizaid201@gmail.com",
+      to: data.email,
       from: {
         name: config.mail.sender_name,
         address: config.mail.sender,
       },
       cc: config.mail.reciever_cc,
       bcc: config.mail.reciever_bcc,
-      subject: "Schbang: Order Confirmation",
+      subject: "Ecommerce: Order Confirmation",
       template: "order",
       templateVars: data,
       // attachments:attachments

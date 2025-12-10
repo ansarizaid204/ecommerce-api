@@ -26,6 +26,7 @@ router.post(
     const { items } = req.body;
 
     const userId = req.user._id;
+    const userEmail = req.user.email;
 
     let totalAmount = 0;
     const orderItems = [];
@@ -59,7 +60,7 @@ router.post(
       });
     }
 
-    const order = await Order.create({
+    let  order = await Order.create({
       orderNumber: generateOrderNumber(),
       userId: userId,
       items: orderItems,
@@ -67,8 +68,10 @@ router.post(
       status: "pending",
     });
 
+    order = order.toObject();
+
     //sending email
-    agenda.now("order-email", order);
+    agenda.now("order-email", {...order,email:userEmail});
 
     res.send(sendResponse(order, "Order Placed!"));
   })
