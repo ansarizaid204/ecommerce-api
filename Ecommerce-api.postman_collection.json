@@ -985,7 +985,7 @@
 		"bearer": [
 			{
 				"key": "token",
-				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5Mzg0NTI0YmFhNzMwN2I4MTcxNmMzMCIsImlhdCI6MTc2NTMwMDQ2OSwiZXhwIjoxNzY1MzAxMDY5fQ.snfBP8TsgrpNJs1Nq5bhCa71j4CkL4RZ_Rn2ZeFNpbo",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MzkyMGNhZGRhYmE3NzUxOWI2NmRjMiIsImlhdCI6MTc2NTM1MTYyNiwiZXhwIjoxNzY1MzUzNDI2fQ.IdmutyFa_5Uj5V8N9PAatreFeK9NXC7n3hDpvrCfgP4",
 				"type": "string"
 			}
 		]
@@ -1015,6 +1015,11 @@
 		}
 	],
 	"variable": [
+		{
+			"key": "base_url",
+			"value": "",
+			"disabled": true
+		},
 		{
 			"key": "base_url",
 			"value": ""
